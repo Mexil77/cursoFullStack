@@ -51,11 +51,38 @@ h3 {
 
 .input-group__input {
 	width: 70%;
+	height: 2rem;
+	border-radius: 20px;
+	border: #eb9fef 2px solid;
+	background-color: #545677;
+	padding: 0 10px;
+}
+
+.input-group__input:focus {
+	outline: none;
+	border: rgb(248, 0, 215) 2px solid;
+	background-color: aliceblue;
+	color: #011c27;
+	font-weight: bold;
+}
+
+.input-group__input::placeholder {
+	color: #eb9fef;
 }
 
 .form__submit-button {
 	width: 25%;
 	align-self: center;
+	border-radius: 20px;
+	background-color: #eb9fef;
+	font-weight: bold;
+	color: #03254e;
+	height: 2rem;
+}
+
+.form__submit-button:hover {
+	background-color: #545677;
+	color: #eb9fef;
 }
 
 .card_preview-card {
@@ -74,4 +101,37 @@ h3 {
 
 .card__title {
 	border-bottom: 2px solid #afafaf;
+}
+
+.butons-container {
+	display: flex;
+	width: 100%;
+	justify-content: end;
+}
+
+.butons-container__button {
+	border-radius: 5px;
+	width: 2rem;
+	height: 2rem;
+	border: 1px solid #03254e;
+	margin: 0 5px;
+	color: #eb9fef;
+}
+
+.butons-container__button_danger {
+	background-color: red;
+}
+.butons-container__button_danger:hover {
+	background-color: rgb(168, 0, 0);
+}
+
+.butons-container__button_active {
+	background-color: rgb(53, 53, 218);
+}
+.butons-container__button_active:hover {
+	background-color: rgb(18, 18, 158);
+}
+
+.butons-container__button i {
+	pointer-events: none;
 }

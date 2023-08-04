@@ -6,6 +6,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Notes app</title>
 		<link rel="stylesheet" href="./index.css">
+		<script src="https://kit.fontawesome.com/25b177591f.js" crossorigin="anonymous"></script>
 	</head>
 
 	<body>
@@ -17,68 +18,34 @@
 				<h3 class="form__title">Nueva Nota</h3>
 				<div class="input-group form__input-group">
 					<h3 class="input-group__title">Titulo</h3>
-					<input type="text" placeholder="Ir por despensa" class="input-group__input">
+					<input id="input-title" type="text" placeholder="Ir por despensa" class="input-group__input">
 				</div>
 				<div class="input-group form__input-group">
 					<h3 class="input-group__title">Descripcion</h3>
-					<input type="text" placeholder="Comprar 3 rebanadas..." class="input-group__input">
+					<input id="input-description" type="text" placeholder="Comprar 3 rebanadas..." class="input-group__input">
 				</div>
-				<button type="submit" class="form__submit-button">Guardar</button>
+				<button id="submit-button" type="submit" class="form__submit-button">Guardar</button>
 			</form>
 			<div class="card card_preview-card">
-				<h3 class="card__title">Lorem, ipsum.</h3>
-				<p class="card__body">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt quia perferendis
-					mollitia ex incidunt
-					facilis.</p>
+				<h3 id="preview-card-title" class="card__title">Titulo</h3>
+				<p id="preview-card-description" class="card__body">Descipcion</p>
 			</div>
 		</section>
-		<section class="section">
-			<div class="card">
+		<section id="card-dashboard" class="section">
+			<!-- Card Template -->
+			<!-- <div class="card">
 				<h3 class="card__title">Titulo</h3>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore minima natus, excepturi reprehenderit
 					aperiam alias nobis culpa id ut blanditiis.</p>
-			</div>
-			<div class="card">
-				<h3 class="card__title">Titulo</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore minima natus, excepturi reprehenderit
-					aperiam alias nobis culpa id ut blanditiis.</p>
-			</div>
-			<div class="card">
-				<h3 class="card__title">Titulo</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore minima natus, excepturi reprehenderit
-					aperiam alias nobis culpa id ut blanditiis.</p>
-			</div>
-			<div class="card">
-				<h3 class="card__title">Titulo</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore minima natus, excepturi reprehenderit
-					aperiam alias nobis culpa id ut blanditiis.</p>
-			</div>
-			<div class="card">
-				<h3 class="card__title">Titulo</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore minima natus, excepturi reprehenderit
-					aperiam alias nobis culpa id ut blanditiis.</p>
-			</div>
-			<div class="card">
-				<h3 class="card__title">Titulo</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore minima natus, excepturi reprehenderit
-					aperiam alias nobis culpa id ut blanditiis.</p>
-			</div>
-			<div class="card">
-				<h3 class="card__title">Titulo</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore minima natus, excepturi reprehenderit
-					aperiam alias nobis culpa id ut blanditiis.</p>
-			</div>
-			<div class="card">
-				<h3 class="card__title">Titulo</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore minima natus, excepturi reprehenderit
-					aperiam alias nobis culpa id ut blanditiis.</p>
-			</div>
-			<div class="card">
-				<h3 class="card__title">Titulo</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore minima natus, excepturi reprehenderit
-					aperiam alias nobis culpa id ut blanditiis.</p>
-			</div>
+				<div class="butons-container card__butons-container">
+					<button class="butons-container__button butons-container__button_active"><i
+							class="fa-solid fa-pencil"></i></button>
+					<button class="butons-container__button butons-container__button_danger">
+						<i class="fa-solid fa-trash"></i></button>
+				</div>
+			</div> -->
 		</section>
 	</body>
+	<script src="index.js"></script>
 
 </html>
